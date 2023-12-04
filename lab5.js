@@ -15,7 +15,7 @@ const todos = [
 ];
 
 const Lab5 = (app) => {
-  app.get("/a5/todos", (req, res) => {
+  app.get("api/a5/todos", (req, res) => {
     const { completed } = req.query;
     const completedBool = completed === "true";
     if (completed !== undefined) {
